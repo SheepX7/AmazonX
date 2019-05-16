@@ -1,0 +1,66 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:2:132-162
+	android:versionName
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:2:94-131
+		INJECTED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml
+		INJECTED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:2:70-93
+		INJECTED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml
+		INJECTED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support.test:runner:0.5] D:\Android Environment\SDK\Sdk\.android\build-cache\af6d5fac84a6b7edb876449dcb666d7849ea5c5f\output\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support.test:exposed-instrumentation-api-publish:0.5] D:\Android Environment\SDK\Sdk\.android\build-cache\55b75f1481d8fda5cbcd020e8e8297f2d4f41523\output\AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml
+		INJECTED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:4:15-41
+		INJECTED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml
+		INJECTED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml
+instrumentation
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:6:5-131
+	android:targetPackage
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:6:84-129
+	android:name
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:6:22-83
+uses-permission#android.permission.INTERNET
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.ACCESS_MOCK_LOCATION
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:13:5-78
+	android:name
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.INJECT_EVENTS
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:14:5-71
+	android:name
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:14:22-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:15:22-65
+uses-permission#android.permission.WRITE_CALL_LOG
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:16:5-72
+	android:name
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:16:22-70
+application
+ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:18:5-111
+MERGED from [com.android.support.test:runner:0.5] D:\Android Environment\SDK\Sdk\.android\build-cache\af6d5fac84a6b7edb876449dcb666d7849ea5c5f\output\AndroidManifest.xml:24:5-20
+MERGED from [com.android.support.test:exposed-instrumentation-api-publish:0.5] D:\Android Environment\SDK\Sdk\.android\build-cache\55b75f1481d8fda5cbcd020e8e8297f2d4f41523\output\AndroidManifest.xml:24:5-20
+	android:label
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:18:83-109
+	android:debuggable
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:18:18-43
+	android:icon
+		ADDED from D:\Android Proj\selendroid\selendroid-server\AndroidManifest.xml:18:44-82

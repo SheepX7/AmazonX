@@ -1,0 +1,1 @@
+include ':app', ':libcore', ':selendroid-server-common', ':libcore4android', ':lib4amazon'/*, ':selendroid-server'*/

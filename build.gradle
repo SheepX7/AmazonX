@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.61'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // GreenDao Plugin
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+apply from: 'properties.gradle'
+
+ext {
+    // https://bintray.com/android/android-tools/com.android.tools.build.gradle/view
+    androidBuildToolsGradle = 'com.android.tools.build:gradle:2.3.2'
+    // https://bintray.com/bintray/jcenter/com.jakewharton.sdkmanager:gradle-plugin
+    sdkManager = 'com.jakewharton.sdkmanager:gradle-plugin:0.12.0+'
+    // https://bintray.com/bintray/jcenter/org.json%3Ajson/20090211/view
+    json = 'org.json:json:20090211'
+    seleniumVersion = '2.48.2'
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+    greenDaoVersion = 'org.greenrobot:greendao:3.2.0'
+    minSdkVersion = 14
+    targetSdkVersion = 27
+    sourceCompatibilityVersion = 1.7
+    targetCompatibilityVersion = 1.7
+    junit = 'junit:junit:4.12'
+    versionCode = 1
+    versionName = "1.0"
+}

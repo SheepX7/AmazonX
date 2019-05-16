@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xuranus.amx.view.common.TagEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        app:tet_text="Name:" />
+
+    <com.xuranus.amx.view.common.TagEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        app:tet_text="Price:" />
+
+
+</LinearLayout>
