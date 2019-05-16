@@ -45,6 +45,11 @@ public class LogFactory {
         return mLog;
     }
 
+    public XLog createXposedLog() {
+        return new XposedBridgeLog();
+    }
+
+
 
     /**
      * temp func

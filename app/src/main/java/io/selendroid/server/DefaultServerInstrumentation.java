@@ -68,7 +68,7 @@ public class DefaultServerInstrumentation implements ServerInstrumentation {
         this.wakeLock =
           pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "Selendroid");
 
-        if (args.isLoadExtensions()) {
+        if (args != null && args.isLoadExtensions()) {
             extensionLoader = new ExtensionLoader(instrumentation,
                     ExternalStorage.getExtensionDex().getAbsolutePath());
         } else {

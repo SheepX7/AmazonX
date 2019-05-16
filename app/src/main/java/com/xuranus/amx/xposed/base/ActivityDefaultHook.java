@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import com.xuranus.amx.log.LogFactory;
+import com.xuranus.amx.log.XposedBridgeLog;
 import com.xuranus.amx.xposed.MainHooker;
 import com.xuranus.amx.xposed.util.ToastUtil;
 
@@ -31,25 +33,10 @@ public class ActivityDefaultHook implements ActiviyHook {
 
     @Override
     public void onActivityAfterCreating(Context context, Bundle arguments) {
-        MainHooker.logger.e("onActivity After Creating");
-        ToastUtil.toastLong(context, "=================================" + context.getClass().getSimpleName());
-        try {
-            Class HomeActivity = Class.forName("com.amazon.mShop.home.web.MShopWebGatewayActivity");
-            ToastUtil.toastLong(context, "目标：", HomeActivity.getClass().getSimpleName());
 
-            if (HomeActivity.isInstance(context)) {
-                ToastUtil.toastLong(context, "111111111");
-
-                context.startActivity(new Intent(context, Class.forName("com.amazon.mShop.debug.DebugSettingsActivity")));
-            }
-
-        } catch (ClassNotFoundException e) {
-            ToastUtil.toastLong(context, "错误：%s", e.toString());
-            e.printStackTrace();
-        }
-
-        instrumentation = new JUnitRunnerServerInstrumentation(context,
-                new InstrumentationArguments(arguments));
+        LogFactory.getInstance().createXposedLog().i("Activity %s onCreate",
+                context.getClass().getSimpleName());
+        instrumentation = new JUnitRunnerServerInstrumentation(context, null);
 
         instrumentation.onCreate();
         instrumentation.startServer();

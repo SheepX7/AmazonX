@@ -15,10 +15,14 @@ package io.selendroid.server.util;
 
 import android.util.Log;
 
+import com.xuranus.amx.log.LogFactory;
+import com.xuranus.amx.log.XLog;
+
 import java.lang.UnsatisfiedLinkError;
 
 public class SelendroidLogger {
   public static final String LOG_TAG = "SELENDROID";
+  private static final XLog logger = LogFactory.getInstance().createXposedLog();
 
   private static String formatMessage(String message) {
     StackTraceElement stackTraceElement = Thread.currentThread().getStackTrace()[4];
@@ -37,6 +41,7 @@ public class SelendroidLogger {
   public static void error(String message) {
     if (isLoggable(Log.ERROR)) {
       Log.e(LOG_TAG, formatMessage(message));
+      logger.e(message);
     }
   }
 
@@ -49,6 +54,7 @@ public class SelendroidLogger {
   public static void warning(String message) {
     if (isLoggable(Log.WARN)) {
       Log.w(LOG_TAG, formatMessage(message));
+      logger.w(message);
     }
   }
 
@@ -61,6 +67,7 @@ public class SelendroidLogger {
   public static void info(String message) {
     if (isLoggable(Log.INFO)) {
       Log.i(LOG_TAG, formatMessage(message));
+      logger.i(message);
     }
   }
 
@@ -73,6 +80,7 @@ public class SelendroidLogger {
   public static void debug(String message) {
     if (isLoggable(Log.DEBUG)) {
       Log.d(LOG_TAG, formatMessage(message));
+      logger.d(message);
     }
   }
 
